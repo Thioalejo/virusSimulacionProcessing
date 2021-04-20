@@ -3,6 +3,9 @@ float y;
 boolean estado = true;
 boolean estado2 = true;
 int cantidadBolitas = 10;
+color contagiado = #FF0000;
+color curado = #00FF00;
+color sano = #ffffff;
 bolita[] bolitas = new bolita[10];
 
 void setup()
@@ -11,7 +14,7 @@ void setup()
  size(800,600);
   
   for (int i=0; i<bolitas.length; i++){
-    bolitas[i] = new bolita (random(width),(random(height)),#ffffff);
+    bolitas[i] = new bolita (random(width),(random(height)),sano);
   } 
 }
 
