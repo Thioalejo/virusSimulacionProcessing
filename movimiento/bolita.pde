@@ -7,6 +7,7 @@ class bolita
   boolean estado = true;
   boolean estado2 = true;
   boolean prueba = true;
+  float d = 50;
 
   bolita(float posicion_x, float posicion_y, color colorDeBola)
   {
@@ -15,7 +16,7 @@ class bolita
       c = colorDeBola;
    }
   
-  void pintarBolita(int n)
+  void pintarBolita()
   {
     fill(c);
     stroke(50);
@@ -56,4 +57,15 @@ class bolita
        }
      }
   }
+  void colision() {
+    float distancia = dist(mouseX , mouseY, x, y);
+    if (mousePressed){
+    if (distancia < d){
+      c= #FF0000;
+     // x = -1000;
+      //puntaje++;
+      //maxpuntaje = max(puntaje, maxpuntaje);
+      }
+    }
+   }
 }

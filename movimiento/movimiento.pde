@@ -6,6 +6,7 @@ int cantidadBolitas = 10;
 color contagiado = #FF0000;
 color curado = #00FF00;
 color sano = #ffffff;
+float d = 50;
 bolita[] bolitas = new bolita[10];
 
 void setup()
@@ -20,9 +21,10 @@ void setup()
 
 
 void draw(){
-  background(0,0,255);
+  background(0,0,0);
   for(int i=1; i<bolitas.length; i++){
-    bolitas[i].pintarBolita(2);
+    bolitas[i].pintarBolita();
     bolitas[i].moverBolita();
+    bolitas[i].colision();
   }
 }
