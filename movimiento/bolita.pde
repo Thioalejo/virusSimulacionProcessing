@@ -20,14 +20,11 @@ class bolita
     fill(c);
     stroke(50);
     ellipse(x,y,20,20);
-
-    
   }
 
- void subirBolita()
+ void moverBolita()
   {
-   
-   if(estado ==true) //<>//
+   if(estado ==true)
      {
        x++;
        if(x>785)
@@ -57,6 +54,6 @@ class bolita
        {
          estado2 = true;
        }
-     } //<>// //<>//
+     }
   }
 }

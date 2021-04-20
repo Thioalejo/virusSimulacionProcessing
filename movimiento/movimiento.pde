@@ -20,6 +20,6 @@ void draw(){
   background(0,0,255);
   for(int i=1; i<bolitas.length; i++){
     bolitas[i].pintarBolita(2);
-    bolitas[i].subirBolita();
+    bolitas[i].moverBolita();
   }
 }
